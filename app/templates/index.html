@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InferenceCache</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 InferenceCache</h1>
+        <form method="post" action="/infer">
+            <textarea name="prompt" placeholder="Enter your prompt..."></textarea>
+            <button type="submit">Run Inference</button>
+        </form>
+
+        {% if output %}
+        <div class="result">
+            <h2>Result:</h2>
+            <p>{{ output }}</p>
+            <p><strong>Hash:</strong> {{ hash }}</p>
+            <p><strong>Signature:</strong> {{ signature }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
