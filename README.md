@@ -1,14 +1,14 @@
 # InferenceCache
 
-InferenceCache is a real-time AI inference proxy that adds tamper-proof logging using digital signatures and Merkle trees. It wraps any AI model (like OpenAI) with a secure and cacheable API layer, suitable for applications that require auditable and verifiable inference history.
+InferenceCache is a real time AI inference proxy that adds tamper-proof logging using digital signatures and Merkle trees. It wraps any AI model (like OpenAI) with a secure and cacheable API layer, suitable for applications that require auditable and verifiable inference history.
 
 ## Features
 
-- Real-time AI responses using OpenAI GPT models
+- Real time AI responses using OpenAI GPT models
 - Caches results with SHA-256 hash keys
 - Digitally signs AI outputs with Ed25519 signatures
 - Appends every result to a Merkle tree for audit integrity
-- Tamper-proof verification of responses
+- Tamper proof verification of responses
 - Local UI built with FastAPI and Jinja2
 - Exportable logs and verifiable proofs (CLI tool coming soon)
 
